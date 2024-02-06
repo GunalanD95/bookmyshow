@@ -2,10 +2,11 @@
 
 ## Overview
 
-This project is a demonstration of building a backend for a ticket booking application using FastAPI, a modern, fast (high-performance), web framework for building APIs with Python 3.7+.
+This project is a demonstration of building a backend for a ticket booking application using FastAPI, a modern, fast (high-performance), web framework for building APIs with Python 3.7+ with postgres as database.
 
 ## Directory Structure
 
+```
 bookmyshow/
 │
 ├── .env/ # Directory for environment variables
@@ -23,10 +24,12 @@ bookmyshow/
 ├── LICENSE # License file
 ├── README.md # This README file
 └── bookmyshow - public.png # BookMyShow logo
+```
 
 ## Schema Design
 
 ![Schema Design](../bookmyshow/bookmyshow%20-%20public.png)
+
 
 ## Setup and Installation
 
