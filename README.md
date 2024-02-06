@@ -28,7 +28,7 @@ bookmyshow/
 
 ## Schema Design
 
-![Schema Design](../bookmyshow/bookmyshow%20-%20public.png)
+![Schema Design](bookmyshow%20-%20public.png)
 
 
 ## Setup and Installation
