@@ -61,6 +61,8 @@ def seed_data_function():
         # Add shows
         show1 = Show(auditorium_id=auditorium1.id, movie_id=movie1.id, start_time='2022-06-01 10:00:00', end_time='2022-06-01 12:00:00', show_features={'show_type': '2D'})
         show2 = Show(auditorium_id=auditorium2.id, movie_id=movie2.id, start_time='2022-06-01 10:00:00', end_time='2022-06-01 12:00:00', show_features={'show_type': '2D'})
+        session.add_all([show1, show2])
+        session.commit()
         
         # Add seats , show_seat and show_seat_type
         seat_type = ShowSeatType(show_id=show1.id, seat_type=SeatType.BRONZE, price=100)
@@ -77,17 +79,16 @@ def seed_data_function():
 
                 session.add(seat1)
                 session.add(seat2)
-
+                session.commit()
+                
                 show_seat = ShowSeat(show_id=show1.id, seat_id=seat1.id, show_seat_type=seat_type.id , status=SeatStatus.AVAILABLE)
                 show_seat_1 = ShowSeat(show_id=show2.id, seat_id=seat2.id, show_seat_type=seat_type_1.id, status=SeatStatus.AVAILABLE)
                 
                 session.add_all([show_seat, show_seat_1])
-                
+                session.commit()
                 
         # Add User
         user1 = User(name='Vishal',email_id='vishal@123')
         user2 = User(name='Rohit',email_id='rohit@123')
-        
         session.add_all([user1, user2])
-        
         session.commit()
