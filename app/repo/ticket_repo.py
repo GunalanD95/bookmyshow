@@ -55,11 +55,9 @@ def book_ticket(request, db):
 
       payment.payment_status = PaymentStatus.PAID
       db.add(payment)
-      # Commit the transaction
       
       
    db.commit()
-   print("ticket-id", ticket, ticket.ticket_id)
    
    response = BookTicketResponseSchema(
       ticket_id=ticket.id,
