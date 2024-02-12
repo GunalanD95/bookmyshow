@@ -35,7 +35,7 @@ bookmyshow/
 
 1. **Clone the repository:**
 ```
-git clone 
+git clone https://github.com/GunalanD95/bookmyshow
 ```
 
 

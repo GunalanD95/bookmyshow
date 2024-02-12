@@ -21,16 +21,14 @@ app.include_router(ticket_router)
 
 @app.get("/")
 def index():
-    return 'Welcome to BookMyShow'
+    return "Welcome to BookMyShow"
 
 
 def seed_data_on_startup():
-    seed_data_function()  
+    seed_data_function()
+
 
 # loaded dummy data to db
 # @app.on_event("startup")
 # async def startup_event():
 #     seed_data_on_startup()
-
-
-
