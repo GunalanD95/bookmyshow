@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer,  ForeignKey , Enum , Float
 
 import enum
-from sqlalchemy.orm import relationship
 from app.dependencies.db import Base
 
 class PaymentType(enum.Enum):
@@ -13,7 +12,6 @@ class PaymentStatus(enum.Enum):
     PENDING  = 'pending'
     PAID   = 'paid'
     FAILED = 'failed'
-    
 
 class Payment(Base):
     __tablename__ = 'payment'

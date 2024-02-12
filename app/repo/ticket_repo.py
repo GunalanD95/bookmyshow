@@ -1,7 +1,5 @@
 
 from fastapi import HTTPException
-from sqlalchemy import select
-from sqlalchemy.exc import IntegrityError
 from datetime import datetime
 
 
